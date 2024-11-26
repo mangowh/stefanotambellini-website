@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import CustomLink from "../components/CustomLink";
-import { SocialLinks } from "../components/Footer";
+import { SocialLinks } from "../components/SocialLinks";
 import PageTitle from "../components/PageTitle";
 import ThemeSwitcher from "../components/ThemeSwitch";
 import WebGL from "../components/WebGL";

@@ -13,10 +13,7 @@ export const SocialLinks: FunctionComponent = () => {
   return (
     <div style={{ display: "inline-block", verticalAlign: "sub" }}>
       <p>
-        <CustomLink href={siteMetadata.instagram}>Instagram</CustomLink>
-      </p>
-      <p>
-        <CustomLink href={siteMetadata.twitter}>Twitter</CustomLink>
+        <CustomLink href={siteMetadata.linkedin}>Linkedin</CustomLink>
       </p>
       <p>
         <CustomLink href={siteMetadata.github}>Github</CustomLink>

@@ -101,7 +101,7 @@ const WebGL: FunctionComponent = () => {
       distortion: 0.4,
       distortion2: 1.6,
       speed: 0.01,
-      rollSpeed: 0.01,
+      // rollSpeed: 0.01,
     };
 
     let staticParams = {
