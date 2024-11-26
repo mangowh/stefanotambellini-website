@@ -1,22 +1,63 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import PageTitle from "../components/react/PageTitle";
-
 import "../style/global.css";
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import WebGl from "../components/WebGl.astro";
+
+import PageTitle from "../components/react/PageTitle";
+import { SocialLinks } from "../components/react/SocialLinks";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <PageTitle>
-      <a href="/projects">asdf</a>
-    </PageTitle>
-  </body>
-</html>
+<BaseLayout>
+  <div
+    class="relative p-4 pt-36 sm:p-12 md:p-16 lg:p-24 break-words overflow-hidden"
+  >
+    <div>
+      <WebGl />
+
+      <div
+        class="relative z-30"
+        style={{
+          minHeight: "min-content",
+        }}
+      >
+        <div
+          class="antialiased"
+          style={{
+            textShadow: "0 2px 4px rgba(255,255,255,0.10)",
+          }}
+        >
+          <div class="md:max-w-4xl">
+            <PageTitle>
+              <span>Stefano<br />Tambellini</span>
+            </PageTitle>
+
+            <br />
+
+            <div
+              class="text-xs xs:text-base sm:text-xl md:text-2xl leading-tight sm:leading-snug tracking-tight whitespace-pre-line"
+            >
+              <p>messages.presentazione[locale]</p>
+
+              <br />
+
+              <p>
+                <span> messages.contattamiA[locale]</span>
+
+                <br />
+                <br />
+
+                <SocialLinks />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="z-50 fixed bottom-10 right-10">
+          {/* <ThemeSwitcher /> */}
+          themeswitch
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
