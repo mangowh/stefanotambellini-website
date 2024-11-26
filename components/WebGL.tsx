@@ -51,7 +51,7 @@ const WebGL: FunctionComponent = () => {
       alpha: true,
       preserveDrawingBuffer: true,
       precision: "highp",
-      powerPreference: "low-power",
+      powerPreference: "high-performance",
       logarithmicDepthBuffer: true,
     });
     renderer.setSize(width, height);
@@ -100,8 +100,8 @@ const WebGL: FunctionComponent = () => {
       show: true,
       distortion: 0.4,
       distortion2: 1.6,
-      speed: 0.01,
-      // rollSpeed: 0.01,
+      speed: 0,
+      rollSpeed: 0,
     };
 
     let staticParams = {
