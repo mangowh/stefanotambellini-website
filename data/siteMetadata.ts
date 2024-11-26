@@ -8,9 +8,8 @@ export default {
 
   email: "ehi@stefanotambellini.it",
 
-  github: "https://github.com/vesparotta",
+  github: "https://github.com/mangowh",
   twitter: "https://twitter.com/vesparotta",
-  facebook: "https://www.facebook.com/ehisonoste/",
   linkedin: "https://www.linkedin.com/in/stefano-tambellini/",
   instagram: "https://www.instagram.com/ehisonoste/",
 
