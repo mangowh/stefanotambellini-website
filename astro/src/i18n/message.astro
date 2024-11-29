@@ -1,0 +1,27 @@
+---
+interface Props {
+  key: string;
+}
+
+const { key: msg } = Astro.props;
+---
+
+<custom-message data-message={msg} class="leading-4"></custom-message>
+
+<script>
+  import { getLanguage, translate } from "../i18n/utils";
+
+  const lang = getLanguage();
+
+  class CustomMessage extends HTMLElement {
+    connectedCallback() {
+      const message = this.dataset.message;
+
+      if (message) {
+        this.innerHTML = translate(lang, message);
+      }
+    }
+  }
+
+  customElements.define("custom-message", CustomMessage);
+</script>

@@ -5,10 +5,12 @@ import colors from "tailwindcss/colors";
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    screens: {
+      xs: "380px",
+      ...defaultTheme.screens,
+    },
     extend: {
       screens: {
-        xs: "380px",
-
         portrait: { raw: "(orientation: portrait)" },
         landscape: { raw: "(orientation: landscape)" },
       },

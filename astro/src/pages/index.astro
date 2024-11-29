@@ -6,6 +6,9 @@ import WebGl from "../components/WebGl.astro";
 
 import PageTitle from "../components/react/PageTitle";
 import { SocialLinks } from "../components/react/SocialLinks";
+import Message from "../i18n/message.astro";
+import CustomLink from "../components/react/CustomLink";
+import siteData from "../data/siteMetadata";
 ---
 
 <BaseLayout>
@@ -37,12 +40,18 @@ import { SocialLinks } from "../components/react/SocialLinks";
             <div
               class="text-xs xs:text-base sm:text-xl md:text-2xl leading-tight sm:leading-snug tracking-tight whitespace-pre-line"
             >
-              <p>messages.presentazione[locale]</p>
+              <p>
+                <Message key="presentazione" />
+              </p>
 
               <br />
 
               <p>
-                <span> messages.contattamiA[locale]</span>
+                <Message key="contattamiA" />
+                <br />
+                <CustomLink href={`mailto:${siteData.email}`}>
+                  {siteData.email}
+                </CustomLink>
 
                 <br />
                 <br />
